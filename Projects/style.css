@@ -1,0 +1,209 @@
+/* background colour */
+
+body {
+background-color: #1B1C25;
+  text-align: center;
+}
+
+/* section style */
+section {
+margin: auto;
+    width: 70%;
+    background-color: #29382F;    
+    box-shadow: 0px 25px 25px black;
+    text-align: center;
+}
+
+/* text formatting for <h1> and <p> */
+p {
+ font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    color: white;
+ margin: auto;
+    width: 60%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.pimitate {
+     font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+  margin: 40px 100px 40px 100px;
+}
+
+/* formatting for images */
+img {
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px -4px black;
+border: 1px solid black;
+    margin: auto;
+    width: 65%;
+}
+
+/* text shadow for text on the heading */
+.hshadow {
+    text-shadow: 0px 0px 10px black;
+}
+
+hr {
+height:2px;
+border-width:0;
+color:gray;
+background-color:gray;
+margin: 50px 8px 50px 8px;
+}
+
+/* rounded box used for main headings */
+.rcorners {
+    border-radius: 25px;
+  background: #4A8260;
+  padding: 50px;
+
+}
+
+/* anchor style */
+a {
+    text-decoration: none;
+font-family: 'Trebuchet MS', sans-serif;
+text-align: center;
+}
+
+/* header image */
+.header {
+    background-image: url(bg%20page.png);
+    background-size: 1000px;
+    padding: 20px;    
+    
+}
+
+/* Defines footer style */
+footer {
+   background-color: black;
+   padding: 20px 0px 20px;
+   margin: auto;
+    width: 70%;
+   box-shadow: 0px 15px 25px black;
+}
+
+.footertext {
+    font font-size: 12px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+a.footertext:hover {
+    text-decoration: underline;
+}
+
+/* download button */
+.button {    
+    border-radius: 25px;
+    border: 2px solid #4A8260;
+    background-color: #2b4736;
+    padding: 20px;
+    margin: auto;
+    width: 20%;
+  text-align: center;
+    color: white
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+}
+
+a.button:hover {
+  background-color: #292c40;
+  border: 3px solid #4A5082;
+}
+
+/* Audio boxes gain outlines/drop shadow */
+audio {
+   border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px #132118;
+}
+/* NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR-NAVBAR */
+
+/* Navbar container */
+.navbar {
+      box-shadow: 0px -20px 0px 20px #4A8260; 
+    overflow: hidden;
+  background-color: #4A8260;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  
+}
+
+/* The dropdown container */
+.dropdown {
+
+    float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a blue background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #4A5082;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4A8260;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a blue background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #4A5082;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
