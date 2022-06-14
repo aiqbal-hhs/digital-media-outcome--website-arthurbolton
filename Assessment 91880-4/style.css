@@ -1,0 +1,286 @@
+/* This stylesheet defines the styling for almost all elements on the website */
+
+/* background style */
+@media only screen and (min-width: 900px) { 
+body {
+  background-color: black; /* background colour is specified so that if it fails to load the website will still look alright */
+  background-image: url(bg%20page%20dark.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* this makes sure the background covers the whole screen always so that it's always showing */
+  text-align: center;
+}
+}
+/* low resolution background style */
+@media only screen and (max-width: 899px) {
+body {
+    background-color: #29382F;
+}
+}
+/* section style - defines a section in the center of the screen where all the elements of the website go */
+@media only screen and (min-width: 900px) { 
+section {
+    margin: auto;
+    width: 70%; /* this is what makes the background show */
+    background-color: #29382F;    
+    box-shadow: 0px 25px 25px black; /* shadow to differentiate the section from the background more */
+    text-align: center;
+}
+}
+/* low resolution section style */
+@media only screen and (max-width: 899px) {
+section {
+    margin: auto;
+    width: 100%; /* this is to make sure the website looks alright on low resolutions */
+    background-color: #29382F;    
+    text-align: center;
+} 
+}
+/* text formatting for <h1> and <p> */
+ @media screen and (min-width: 900px) { 
+p {
+ font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    color: white;
+ margin: auto;
+    width: 60%; /* this is to make the text left/right margins consistent on different resolution */
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+}
+/* <p> styling for lower resolutions */
+@media screen and (max-width: 899px) {
+p {
+ font-family: 'Helvetica', sans-serif;
+    font-size: 16px; /* font size decreased on low resolutions so more text can fit on the screen */
+    color: white;
+ margin: auto;
+    width: 80%; /* text covers more of the screen on low resolutions so that the text doesn't compress downwards too much */
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+}
+/* this text is used for if I want to mimic the <p> tag on another element */
+.pimitate {
+     font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+/* the <h1> tag in question here is the styling which is paired with the .rcorners tag on the website */
+h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+  margin: 40px 100px 40px 100px;
+}
+
+/* formatting for images */
+@media screen and (min-width: 700px) { 
+img {
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px -4px black;
+border: 1px solid black;
+    margin: auto;
+    width: 65%;
+}
+ } 
+/* image format on low resolution gets rid of the rounded corners and drop shadow because the image will likely fill the screen with the 100% width */
+ @media screen and (max-width: 699px) {
+img {
+    border: 1px solid black;
+    margin: auto;
+    width: 100%;
+}
+} 
+/* text shadow for text on the main heading */
+.hshadow {
+    text-shadow: 0px 0px 10px black;
+    font-size: 50px;
+}
+
+/* this is the formating for the lines between sections on the website, usually used to give each plugin their own section */
+hr {
+height:3px;
+border-width:0;
+color:gray;
+background-color: #68697d;
+margin: 50px 8px 50px 8px;
+}
+
+/* rounded box used for headings */
+.rcorners {
+    border-radius: 25px;
+  background: #4A8260;
+  padding: 50px;
+  margin: auto;
+  width: 60%;
+
+}
+/* this tag is used to make it so an element cannot be highlighted */
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+}
+/* anchor style */
+a {
+    text-decoration: none;
+font-family: 'Trebuchet MS', sans-serif;
+text-align: center;
+}
+
+/* download button */
+.button {    
+    border-radius: 25px;
+    border: 2px solid #4A8260;
+    background-color: #2b4736;
+    padding: 20px;
+    margin: auto;
+    width: 20%;
+  text-align: center;
+    color: white;
+    transition: 0.2s; /* this makes the colour change upon hovering happen with an animation */
+}
+
+/* upon hovering the button will have a slightly thicker border and the colour will change from green to blue */
+.button:hover {
+  background-color: #292c40;
+  border: 3px solid #4A5082;
+}
+/* when clicking the button it will change entirely to a the ligher blue */
+.button:active {
+    background-color: #4A5082;
+}
+
+/* header images */
+/* header for home page */
+.header {
+    background-image: url(bg%20page.jpg);
+    background-size: 1000px;
+    padding: 20px 0px 20px 0px;     
+}
+/* header image for effect plugin page */
+.header1 {
+    background-image: url(header%20effect%20blur.jpg);
+    background-size: 1000px;
+    padding: 20px 0px 20px 0px;     
+}
+/* header image for instrument plugin page */
+.header2 {
+    background-image: url(header%20instrument%20blur.jpg);
+    background-size: 1000px;
+    padding: 20px 0px 20px 0px;     
+}
+/* header image for synth plugin page */
+.header3 {
+    background-image: url(header%20synth%20blur.jpg);
+    background-size: 1000px;
+    padding: 20px 0px 20px 0px;     
+}
+/* header image for the about page (it's the header I use for my youtube and spotify) */
+.header4 {
+    background-image: url(Header%20about%20darker.jpg);
+    background-size: 1000px;
+    padding: 20px 0px 20px 0px;  
+    background-size: cover;
+}
+/* Defines footer style */
+footer {
+   background-color: black;
+   padding: 20px 0px 20px;
+   margin: auto;
+   box-shadow: 0px 15px 25px black;
+}
+/* a small font size for text inside of the footer */
+.footertext {
+    
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+/* anchor tags in the footer will have an underline hover effect */
+a.footertext:hover {
+    text-decoration: underline;
+}
+
+/* Audio boxes gain outlines/drop shadow */
+audio {
+   border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px #132118;
+}
+
+/* Navbar container */
+.navbar {
+      box-shadow: 0px -20px 0px 20px #4A8260; 
+    overflow: hidden;
+  background-color: #4A8260;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  
+}
+
+/* dropdown container */
+.dropdown {
+
+    float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 16px;
+  background-color: inherit;
+  font-family: inherit; /* important for vertical align on mobile phones */
+  margin: 0; /* important for vertical align on mobile phones */
+}
+
+/* background colour to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #4A5082;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4A8260;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* background colour to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #4A5082;
+}
+
+/* dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
